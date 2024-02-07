@@ -25,3 +25,27 @@
 #container a {
   text-decoration: none;
 }
+
+ion-button {
+
+
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+margin-left: 5rem;
+margin-right: 5rem;
+  margin-top: 5rem;
+
+  --box-shadow: 0 10px 2rem 0 rgba(89, 187, 135, 0.867);
+  --ripple-color: rgb(78, 240, 156);
+}
+
+.xd {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h5{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}

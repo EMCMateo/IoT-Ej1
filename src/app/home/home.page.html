@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Ejercicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="xd">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="led">
+    <ion-button (click)="toogleState()" shape="round" [color]="ledStatus ? 'success' : 'danger'"> <ion-icon name="power-outline"> </ion-icon> </ion-button>
+    <h5> LED 1</h5>  
+  </div>
+  <div class="led">
+    <ion-button (click)="toogleStateL2()" shape="round" [color]="ledStatusL2 ? 'success' : 'danger'"> <ion-icon name="power-outline"> </ion-icon> </ion-button>  
+    <h5> LED 2</h5>  
+  </div>
+  <div class="led">
+    <ion-button (click)="toogleStateL3()" shape="round" [color]="ledStatusL3 ? 'success' : 'danger'"> <ion-icon name="power-outline"> </ion-icon> </ion-button>  
+    <h5> LED 3</h5>  
+  </div>
+  <div class="led">
+    <ion-button (click)="toogleStateL4()" shape="round" [color]="ledStatusL4 ? 'success' : 'danger'"> <ion-icon name="power-outline"> </ion-icon> </ion-button>  
+    <h5> LED 4</h5>  
+  </div>
   </div>
 </ion-content>
